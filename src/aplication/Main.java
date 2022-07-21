@@ -28,7 +28,8 @@ public class Main {
                 case 1:
                     Teacher();
                     break;
-                case 2: //chamar Estudante
+                case 2:
+                    System.out.println("Estudante ");
                     break;
                 case 3: //Chamar disciplinas
                     break;
