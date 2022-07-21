@@ -1,9 +1,9 @@
 package entities;
 
-public class Student {
+public class Student extends Course{
      private Integer id;
      private String name;
-     //private Course idCourse;
+
 
      public Student(){}
 
