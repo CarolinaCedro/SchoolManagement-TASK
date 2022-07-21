@@ -4,14 +4,18 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+
         int op;
 
+        System.out.println("--- Star College ----");
         do {
-            System.out.println("--- Star College ----");
+
             System.out.println();
             System.out.println("--- Menu ---");
             System.out.println("(1)Professor");
@@ -28,8 +32,21 @@ public class Main {
                 break;
             case 3: //Chamar disciplinas
                 break;
-            default: //default
+            default:
+                System.out.println("Saindo...");
         }
+
+    }
+
+    public static void Teacher() {
+        System.out.println("Bem vindo Professor!!");
+        System.out.println("Entre com seu id: ");
+        int idTeacher = sc.nextInt();
+        System.out.println("Entre com seu nome: ");
+        String nameTeacher = sc.nextLine();
+        //TODO fazer uma lista com cursos e mostrar a opção de cursos para o user escolher
+        System.out.println("Entre com o id do curso que deseja se matricular: ");
+        int idCourse = sc.nextInt();
 
     }
 }
