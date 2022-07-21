@@ -23,18 +23,21 @@ public class Main {
             System.out.println("(3)Disciplinas");
             System.out.println("(0)Sair");
             op = sc.nextInt();
+
+            switch (op) {
+                case 1:
+                    Teacher();
+                    break;
+                case 2: //chamar Estudante
+                    break;
+                case 3: //Chamar disciplinas
+                    break;
+                default:
+                    System.out.println("Saindo...");
+            }
+
         } while (op != 0);
 
-        switch (op) {
-            case 1: //chamar Professor
-                break;
-            case 2: //chamar Estudante
-                break;
-            case 3: //Chamar disciplinas
-                break;
-            default:
-                System.out.println("Saindo...");
-        }
 
     }
 
@@ -42,6 +45,7 @@ public class Main {
         System.out.println("Bem vindo Professor!!");
         System.out.println("Entre com seu id: ");
         int idTeacher = sc.nextInt();
+        sc.nextLine();
         System.out.println("Entre com seu nome: ");
         String nameTeacher = sc.nextLine();
         //TODO fazer uma lista com cursos e mostrar a opção de cursos para o user escolher
